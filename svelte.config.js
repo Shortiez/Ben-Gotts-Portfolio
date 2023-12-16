@@ -4,10 +4,15 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter(),
-		paths: {
-			base: process.env.NODE_ENV === "production" ? "Ben-Gotts-Portfolio" : "",
-		},
+		adapter: adapter({
+			// default options are shown. On some platforms
+			// these options are set automatically — see below
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: true
+		})
 	},
 	preprocess: vitePreprocess()
 };

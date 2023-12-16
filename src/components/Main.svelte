@@ -9,26 +9,60 @@
         },
         {
             projectName : "Carth",
-            projectImage : "fa-solid fa-horse",
+            projectImage : "fa-brands fa-steam",
             projectLink : "https://store.steampowered.com/app/1526430/Carth/"
         },
         {
             projectName : "Simon Game",
-            projectImage : "fa-brands fa-windows",
+            projectImage : "fa-brands fa-apple",
             projectLink : ""
         },
         {
             projectName: "Garden Navigator",
-            projectImage: "fa-solid fa-tree",
+            projectImage: "fa-brands fa-apple",
             projectLink: ""
         },
     ];
 
-    let benefits = [
-        { name : "Benefit 1", description : "A description of benefit one"},
-        { name : "Benefit 2", description : "A description of benefit two"},
-        { name : "Benefit 3", description : "A description of benefit three"},
+    let aboutMeFacts = [
+        {
+            name: "Studying For A Bachelors In Computer Science",
+            description: "Currently immersed in the dynamic world of Computer Science at the University of Liverpool, pursuing a Bachelor's degree. " +
+                "I am presently navigating my second year and actively seeking a compelling industry placement. " +
+                "In my inaugural year, I garnered an impressive average of 69.5%, setting the stage for an anticipated first-class achievement in my second year."
+        },
+        {
+            name: "9 Years Of Programming Experience",
+            description: "With a rich history spanning nine years, my journey in programming commenced at the age of 11. " +
+                "My coding odyssey has predominantly been in C#, " +
+                "complemented by proficiency in an array of languages such as Java, Python, Swift, JavaScript, and HTML/CSS. " +
+                "This seasoned experience is the bedrock upon which I craft innovative solutions."
+        },
+        {
+            name: "A Hobbyist Game Developer",
+            description: "Embarking on a seven-year adventure as a game developer, my exploration began with the Unity game engine at the tender age of 13. " +
+                "I have contributed to diverse projects, ranging from solo endeavors to collaborative ventures resulting in notable titles like 'Carth.' " +
+                "My game development prowess extends beyond personal projects, " +
+                "having successfully undertaken freelance assignments that sharpened my skills and expanded my repertoire."
+        },
+        {
+            name: "A Passionate Learner",
+            description: "My zeal for all things Computer Science and Software Development is palpable. " +
+                "A perpetual learner, I am dedicated to absorbing new knowledge and expanding my skill set. " +
+                "Eager for opportunities to enhance my developer acumen, " +
+                "I am equally fervent about delving deeper into the nuances of the games industry. E" +
+                "very project is not just a task but an avenue for continuous growth and refinement."
+        },
+        {
+            name: "Innovative Problem Solver",
+            description: "Beyond the academic and experiential facets, I take pride in being an innovative problem solver. " +
+                "Armed with a potent blend of theoretical knowledge and practical experience, I relish tackling complex challenges head-on." +
+                " My approach involves not only writing code but architecting elegant solutions that resonate with efficiency. " +
+                "With an insatiable curiosity and a knack for finding creative solutions, " +
+                "I am poised to make meaningful contributions in any development environment."
+        }
     ];
+
 </script>
 
 <main class="flex flex-col flex-1 p-4">
@@ -68,7 +102,15 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step project={projects[0]}>
-                <p>Mock description for the first project</p>
+                <p>
+                    This project was completed as part of my second year of study at the University of Liverpool.
+                    It is a <span class="text-violet-400">Machine Learning</span> project that explores the use of <span class="text-violet-400">Adversarial Attacks</span> and <span class="text-violet-400">Defences</span> on a <span class="text-violet-400">Neural Network</span>.
+                    <br/>
+                    <br/>
+                    Languages used: <span class="text-violet-400">Python</span>
+                    <br/>
+                    Libraries used: <span class="text-violet-400">PyTorch</span>
+                </p>
             </Step>
             <Step project={projects[1]}>
                 <p>
@@ -76,13 +118,39 @@
                     During my two years of working on this project I developed a number of core gameplay systems, including the <span class="text-violet-400">Building System</span>,
                     the <span class="text-violet-400">Inventory System</span> and the <span class="text-violet-400">Crafting System</span>.
                     As well as this I also worked on a number of other systems including the creation of <span class="text-violet-400">RESPONSIVE UI</span> and <span class="text-violet-400">Multiplayer</span>.
+                    <br/>
+                    <br/>
+                    Languages used: <span class="text-violet-400">C#</span>
+                    <br/>
+                    Tools used: <span class="text-violet-400">Unity Game Engine</span>
                 </p>
             </Step>
             <Step project={projects[2]}>
-                <p>Mock description for the third project</p>
+                <p>
+                    This project was completed as part of my second year of study at the University of Liverpool.
+                    It is a <span class="text-violet-400">Simon Game</span> that was developed for the <span class="text-violet-400">iOS</span> platform.
+                    The game was developed using <span class="text-violet-400">Swift</span> and <span class="text-violet-400">XCode</span>. The game is a simple <span class="text-violet-400">Simon Game</span> that allows the user to play the game and try to beat their high score.
+                    The game also features a <span class="text-violet-400">Leaderboard</span> that allows the user to see the top 10 scores of all time.
+                    <br/>
+                    <br/>
+                    Languages used: <span class="text-violet-400">Swift</span>
+                    <br/>
+                    Tools used: <span class="text-violet-400">XCode</span>
+                </p>
             </Step>
             <Step project={projects[3]}>
-                <p>Mock description for the fourth project</p>
+                <p>
+                    This project was completed as part of my second year of study at the University of Liverpool.
+                    It is a <span class="text-violet-400">Garden Navigator</span> that was developed for the <span class="text-violet-400">iOS</span> platform.
+                    It is an app that guides the user around the <span class="text-violet-400">Ness Gardens</span> in Liverpool.
+                    It has extensive database that displays information about all the plants in the gardens.
+                    The app also features a <span class="text-violet-400">Map</span> that allows the user to see where they are in the gardens.
+                    <br/>
+                    <br/>
+                    Languages used: <span class="text-violet-400">Swift</span>
+                    <br/>
+                    Tools used: <span class="text-violet-400">XCode</span>
+                </p>
             </Step>
         </div>
 
@@ -100,11 +168,10 @@
         </div>
 
         <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
-            I am a student currently studying Computer Science at the University of Liverpool.
-            I am currently in my second year of study and am looking for a placement year in the industry.
+            I am...
         </p>
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
-            {#each benefits as benefit, index}
+            {#each aboutMeFacts as benefit, index}
                 <div class="flex gap-6 sm:gap-8">
                     <p class="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold">
                         0{index + 1}.
