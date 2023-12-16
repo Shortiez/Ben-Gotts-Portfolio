@@ -28,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: 'Ben-Gotts-Portfolio/'
+          BASE_PATH: '/Ben-Gotts-Portfolio'
         run: |
           npm run build
 
