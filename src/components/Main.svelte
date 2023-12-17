@@ -22,44 +22,44 @@
             projectImage: "fa-brands fa-apple",
             projectLink: ""
         },
+        {
+            projectName: "Assembly",
+            projectImage: "fa-solid fa-hard-drive",
+            projectLink: ""
+        },
     ];
 
     let aboutMeFacts = [
         {
             name: "Studying For A Bachelors In Computer Science",
-            description: "Currently immersed in the dynamic world of Computer Science at the University of Liverpool, pursuing a Bachelor's degree. " +
-                "I am presently navigating my second year and actively seeking a compelling industry placement. " +
-                "In my inaugural year, I garnered an impressive average of 69.5%, setting the stage for an anticipated first-class achievement in my second year."
+            description : "I am currently studying for a Bachelors in Computer Science at the University of Liverpool. " +
+                "I am currently in my second year of study and am looking for a placement year in the industry. " +
+                "In my first year of study I achieved an average of 69.5% and am on track to achieve a first in my second year."
         },
         {
             name: "9 Years Of Programming Experience",
-            description: "With a rich history spanning nine years, my journey in programming commenced at the age of 11. " +
-                "My coding odyssey has predominantly been in C#, " +
-                "complemented by proficiency in an array of languages such as Java, Python, Swift, JavaScript, and HTML/CSS. " +
-                "This seasoned experience is the bedrock upon which I craft innovative solutions."
+            description: "I have been programming for 9 years now. I started programming when I was 11 years old and have been programming ever since. " +
+                "My main language of choice for the majority of this time has been C# but I also have experience in a variety of other languages " +
+                "including Java, Python, Swift, JavaScript and HTML/CSS."
         },
         {
             name: "A Hobbyist Game Developer",
-            description: "Embarking on a seven-year adventure as a game developer, my exploration began with the Unity game engine at the tender age of 13. " +
-                "I have contributed to diverse projects, ranging from solo endeavors to collaborative ventures resulting in notable titles like 'Carth.' " +
-                "My game development prowess extends beyond personal projects, " +
-                "having successfully undertaken freelance assignments that sharpened my skills and expanded my repertoire."
+            description: "I have been developing games as a hobby for 7 years. I started learning the Unity game engine when I was 13 years old and have been developing games ever since. " +
+                "Over the years I have worked on a number of small solo projects but have also worked with teams to develop large steam games such as Carth " +
+                "Additionally, I have worked on a number of freelance projects for clients which has allowed me to develop my skills as a developer."
         },
         {
             name: "A Passionate Learner",
-            description: "My zeal for all things Computer Science and Software Development is palpable. " +
-                "A perpetual learner, I am dedicated to absorbing new knowledge and expanding my skill set. " +
-                "Eager for opportunities to enhance my developer acumen, " +
-                "I am equally fervent about delving deeper into the nuances of the games industry. E" +
-                "very project is not just a task but an avenue for continuous growth and refinement."
+            description: "I am very passionate about everything Computer Science and Software Development related. " +
+                "I am always looking to learn new things and expand my knowledge. " +
+                "I am always looking for new opportunities to learn and develop my skills as a developer. " +
+                "I am also very passionate about the games industry and am always looking to learn more about it."
         },
         {
             name: "Innovative Problem Solver",
-            description: "Beyond the academic and experiential facets, I take pride in being an innovative problem solver. " +
-                "Armed with a potent blend of theoretical knowledge and practical experience, I relish tackling complex challenges head-on." +
-                " My approach involves not only writing code but architecting elegant solutions that resonate with efficiency. " +
-                "With an insatiable curiosity and a knack for finding creative solutions, " +
-                "I am poised to make meaningful contributions in any development environment."
+            description: "I am a very innovative problem solver. I am always looking for new ways to solve problems and am always looking to improve my problem solving skills. " +
+                "I am very good at thinking outside the box and coming up with creative solutions to problems. " +
+                "I am also very good at working with others to solve problems and am always looking to learn new ways to solve problems."
         }
     ];
 
@@ -104,7 +104,11 @@
             <Step project={projects[0]}>
                 <p>
                     This project was completed as part of my second year of study at the University of Liverpool.
-                    It is a <span class="text-violet-400">Machine Learning</span> project that explores the use of <span class="text-violet-400">Adversarial Attacks</span> and <span class="text-violet-400">Defences</span> on a <span class="text-violet-400">Neural Network</span>.
+                    It is a <span class="text-violet-400">Machine Learning</span> project that explores the use of <span class="text-violet-400">Adversarial Attacks</span>
+                    and <span class="text-violet-400">Defences</span> on a <span class="text-violet-400">Neural Network</span>.
+                    The adversarial attack uses the <span class="text-violet-400">PGD</span> algorithm with a second run over with the <span class="text-violet-400">Fast Gradient Sign Method</span>.
+                    This double attack results with a highly effective attack that is able to fool the neural network with a <span class="text-violet-400">99%+</span> success rate.
+                    The adversarial defence algorithm used is <span class="text-violet-400">MNIST</span> which is able to reduce the success rate of the attack to <span class="text-violet-400">30%</span>.
                     <br/>
                     <br/>
                     Languages used: <span class="text-violet-400">Python</span>
@@ -152,6 +156,16 @@
                     Tools used: <span class="text-violet-400">XCode</span>
                 </p>
             </Step>
+            <Step project={projects[4]}>
+                <p>
+                    This project was completed as part of my first year of study at the University of Liverpool.
+                    It is an app which filters a list of numbers into positives, zeros and negatives.
+                    It is fully created in pure <span class="text-violet-400">Assembly</span> with no libraries and a limited amount of base assembly commands allowed.
+                    <br/>
+                    <br/>
+                    Languages used: <span class="text-violet-400">Intel Assembly</span>
+                </p>
+            </Step>
         </div>
 
     </section>
@@ -191,6 +205,7 @@
         <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
             <table class="bg-white text-slate-700 rounded text-center">
                 <thead class="border-b border-solid border-slate-200">
+
                 <tr class="">
                     <th/>
                     <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
@@ -199,49 +214,50 @@
                     <th class="whitespace-nowrap p-2 px-4">Candidate #4</th>
                     <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">Me</th>
                 </tr>
+
                 <tbody>
                     <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Willingness To Learn</td>
+                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Technical Skills</td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
                     </tr>
 
                     <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Adaptability</td>
+                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Effective Communication</td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                    </tr>
+
+                    <tr class="border-b border-solid border-slate-200">
+                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Problem-Solving</td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                    </tr>
+
+                    <tr class="border-b border-solid border-slate-200">
+                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Initiative</td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
                     </tr>
 
                     <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Passion</td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
+                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Time Management</td>
                         <td><i class="fa-solid fa-xmark text-green-500"></i></td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
-                    </tr>
-
-                    <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Experience</td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
-                    </tr>
-
-                    <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold">Team Working</td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-green-500"></i></td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
                     </tr>
                 </tbody>
