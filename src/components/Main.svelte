@@ -28,7 +28,6 @@
             projectLink: ""
         },
     ];
-
     let aboutMeFacts = [
         {
             name: "Studying For A Bachelors In Computer Science",
@@ -56,12 +55,45 @@
                 "I am also very passionate about the games industry and am always looking to learn more about it."
         },
         {
-            name: "Innovative Problem Solver",
-            description: "I am a very innovative problem solver. I am always looking for new ways to solve problems and am always looking to improve my problem solving skills. " +
-                "I am very good at thinking outside the box and coming up with creative solutions to problems. " +
-                "I am also very good at working with others to solve problems and am always looking to learn new ways to solve problems."
+            name: "I Am Looking For A Placement Year",
+            description: "As a computer science student I am currently looking for a role within the industry. " +
+                "I chose to study computer science as I am very passionate about software development and the games industry and believe that choosing" +
+                "the option of a placement year will provide me with the opportunity to gain valuable experience in the industry."
         }
     ];
+
+    let education = [
+        {
+            duration: "2022 - 2026",
+            title: "BSc Computer Science",
+            location: "University of Liverpool",
+            description: "I am currently studying for a Bachelors in Computer Science at the University of Liverpool. " +
+                "I am currently in my second year of study and am looking for a placement year in the industry. " +
+                "In my first year of study I achieved an average of 69.5% and am on track to achieve a first in my second year."
+        },
+        {
+            duration: "2019 - 2021",
+            title: "A-Levels Computer Science",
+            location: "Walthamstow Academy Sixth Form",
+            description: "During sixth form I studied for A-Levels in Computer Science and a BTEC in Business " +
+                "I achieved a B in Computer Science, Distinction* Distinction in Business."
+        }
+    ];
+    let experiences = [
+        {
+            title: "Freelance Software Developer",
+            duration: "2018 - Present",
+            description: "During the past 5 years I have successfully completed various freelance development projects. " +
+                "These have ranged from small video games, to game launchers. " + "I have primarily used C# as well as JavaScript, HTML/CSS to complete these projects."
+        },
+        {
+            title: "Personal Software Projects",
+            duration: "",
+            description: "Since I have started programming I have worked on a number of personal projects. " + "Primarily I have worked with C# and Unity to develop video games. " +
+                "However, I have also worked on a number of other projects including a Discord bot and a game launcher. " +
+                "I have also worked on a number of projects for university including a Machine Learning project and a number of iOS apps."
+        },
+    ]
 
 </script>
 
@@ -73,7 +105,7 @@
             </h2>
 
             <p class="text-base sm:text-large md:text-xl">
-                I'm a student currently studying  <span class="text-violet-300">Computer Science </span> at the <span class="text-violet-400">University Of Liverpool</span>
+                I'm a student currently studying  <span class="text-violet-300">Computer Science </span> at the <span class="text-violet-400">University Of Liverpool.</span> I create fun  <span class="text-violet-400">software</span> during my free time and am always looking to  <span class="text-violet-400">learn</span> new things.
             </p>
 
             <a
@@ -167,7 +199,6 @@
                 </p>
             </Step>
         </div>
-
     </section>
 
     <section id="about" class="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative">
@@ -200,6 +231,7 @@
             {/each}
         </div>
 
+        <!--
         <h5 class="text-2x sm:text-3xl font-semibold text-center poppins">The <span class="text-violet-400 poppins">COMPLETE</span> package</h5>
 
         <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
@@ -267,6 +299,40 @@
             <p>
                 Scroll to see more &rarr;
             </p>
+        </div>
+        -->
+
+        <h5 class="text-2xl sm:text-3xl md:text-4xl mx-auto font-semibold text-center poppins">My <span class="text-violet-400 poppins">Journey</span></h5>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto w-full">
+            <div class="flex flex-col gap-10 p-4 sm:p-6 md:p-8">
+                <h5 class="text-xl sm:text-2xl font-semibold text-center poppins"><span class="text-violet-400 poppins">EDUCATION</span></h5>
+                {#each education as ed, index}
+                    <div class="p-4 sm:p-6 md:p-8 flex flex-col gap-4 rounded-lg border border-solid border-violet-700 text-center group">
+                        <h5 class="font-medium text-xs sm:text-sm md:text-base mr-auto">{ed.duration}</h5>
+                        <h3 class="font-medium text-xl sm:text-2xl md:text-3xl">{ed.title}</h3>
+
+                        {#if ed.location}
+                            <h5 class="font-medium text-xs sm:text-sm md:text-base items-center">{ed.location}</h5>
+                        {/if}
+
+                        <p class="font-normal text-sm sm:text-base md:text-base mr-auto">{ed.description}</p>
+
+                    </div>
+                {/each}
+            </div>
+
+            <div class="flex flex-col gap-10 p-4 sm:p-6 md:p-8">
+                <h5 class="text-xl sm:text-2xl font-semibold text-center poppins pt-8 lg:pt-0"><span class="text-violet-400 poppins">EXPERIENCE</span></h5>
+                {#each experiences as ex, index}
+                    <div class="p-4 sm:p-6 md:p-8 flex flex-col gap-4 rounded-lg border border-solid border-violet-700 text-center group">
+                        <h5 class="font-medium text-xs sm:text-sm md:text-base mr-auto">{ex.duration}</h5>
+                        <h3 class="font-medium text-xl sm:text-2xl md:text-3xl">{ex.title}</h3>
+
+                        <p class="font-normal text-sm sm:text-base md:text-base mr-auto">{ex.description}</p>
+                    </div>
+                {/each}
+            </div>
         </div>
     </section>
 </main>
