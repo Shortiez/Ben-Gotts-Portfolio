@@ -200,9 +200,10 @@
             </Step>
             <Step project={projects[5]}>
                 <p>
-                    This project was completed as part of my first year of study at the University of Liverpool.
-                    It is an app which filters a list of numbers into positives, zeros and negatives.
-                    It is fully created in pure <span class="text-violet-400">Assembly</span> with no libraries and a limited amount of base assembly commands allowed.
+                    This project is my personal portfolio website, what you are currently viewing.
+                    It is a <span class="text-violet-400">SvelteKit</span> website that is hosted on <span class="text-violet-400">Firebase</span>.
+                    It is a fully responsive website that is designed to work on all devices using <span class="text-violet-400">TailwindCSS</span>.
+                    The full source code is available for viewing on my github.
                     <br/>
                     <br/>
                     Languages used: <span class="text-violet-400">HTML/CSS, JavaScript</span>
