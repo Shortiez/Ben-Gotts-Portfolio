@@ -120,11 +120,6 @@
                 <h4 class="relative z-9">Get in touch &rarr;</h4>
             </a>
         </div>
-
-        <div class="relative shadow-2xl grid place-items-center">
-            <!-- <img src={"images/image-i-choose"} alt="Profile Image" class="object-cover z-[2] max-h-[70vh]"/> TODO: Add image -->
-            
-        </div>
     </section>
 
     <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
