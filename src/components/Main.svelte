@@ -27,6 +27,11 @@
             projectImage: "fa-solid fa-hard-drive",
             projectLink: ""
         },
+        {
+            projectName: "Portfolio Website",
+            projectImage: "fa-solid fa-globe",
+            projectLink: "https://github.com/Shortiez/Ben-Gotts-Portfolio"
+        }
     ];
     let aboutMeFacts = [
         {
@@ -198,6 +203,17 @@
                     Languages used: <span class="text-violet-400">Intel Assembly</span>
                 </p>
             </Step>
+            <Step project={projects[5]}>
+                <p>
+                    This project was completed as part of my first year of study at the University of Liverpool.
+                    It is an app which filters a list of numbers into positives, zeros and negatives.
+                    It is fully created in pure <span class="text-violet-400">Assembly</span> with no libraries and a limited amount of base assembly commands allowed.
+                    <br/>
+                    <br/>
+                    Languages used: <span class="text-violet-400">HTML/CSS, JavaScript</span>
+                    Frameworks used: <span class="text-violet-400">SvelteKit, TailwindCSS</span>
+                </p>
+            </Step>
         </div>
     </section>
 
@@ -207,14 +223,9 @@
         before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-violet-700
         after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-violet-700 py-4">
 
-            <h6 class="text-lg sm:text-xl md:text-2xl">Want to know more about me?</h6>
-            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">A bit <span class="poppins text-violet-400"> ABOUT </span> me.</h3>
+            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl p-4">A bit <span class="poppins text-violet-400"> ABOUT </span> me.</h3>
 
         </div>
-
-        <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
-            I am...
-        </p>
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
             {#each aboutMeFacts as benefit, index}
                 <div class="flex gap-6 sm:gap-8">
